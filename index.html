@@ -9,8 +9,14 @@
 <body>
     <div class="container">
         <h1>My To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Add a new task">
-        <button onclick="addTask()">Add Task</button>
+        <div><label for="newTask">Add new task</label>
+        <input type="text" id="taskInput" placeholder="Add a new task"></div>
+	<!-- Due Date Input -->
+        <div><label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" name="dueDate"></div>
+        
+
+        <div><button onclick="addTask()">Add Task</button></div>
         <ul id="taskList"></ul>
     </div>
     <script src="app.js"></script>

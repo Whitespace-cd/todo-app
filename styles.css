@@ -1,27 +1,111 @@
+/* General styling for the body */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
+
+/* Container for the to-do app */
 .container {
-    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+text-align: center;
+
+
 }
-input {
+
+/* Styling for the heading */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+text-align: center;
+
+}
+
+
+/* Input field for task */
+input[type="text"], input[type="date"] {
+    width: 80%;
     padding: 10px;
-    width: 200px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
 }
+
+/* Checkbox and labels for important task */
+label {
+    font-size: 1em;
+    margin-right: 10px;
+    color: #333;
+gn: left;
+
+}
+
+input[type="checkbox"] {
+    margin: 0 10px;
+    transform: scale(1.2);
+}
+
+/* Button for adding task */
 button {
-    padding: 10px;
-    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1em;
+	
 }
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the task list */
 ul {
     list-style-type: none;
     padding: 0;
 }
+
+/* Styling for each task item */
 li {
-    margin: 5px 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/* Important task styling */
+li strong {
+    color: #e53935;
+}
+
+/* Task delete button */
+li button {
+    background-color: #e53935;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #d32f2f;
 }
